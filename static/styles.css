@@ -15,11 +15,12 @@ body {
 	font-family: Arial, Verdana, Helvetica, sans-serif;
 	border-style: none;
 	min-height: 100%;
-	background: #ff00aa;
+	background-image: linear-gradient(45deg,black, rgb(191, 235, 191));
 }
 
 body {
 	line-height: unset !important;
+    text-align: center;
 }
 
 @media only screen and (max-width:799px) {
@@ -104,7 +105,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 320px) and (orientation: portrait) {
+@media only screen and (max-width: 799px) and (orientation: portrait) {
 	.adslot_3 {
 		margin-left: -10px
 	}
@@ -123,7 +124,7 @@ H3 {
 H1 {
 	margin-bottom: 4px;
 	padding-bottom: 0px;
-	color: #aaff33;
+	color: #000000;
 }
 
 H1 {
@@ -188,7 +189,7 @@ input {
 	}
 }
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:799px) {
 	.btn {
 		font-size: 1.2em;
 		padding: 4px;
@@ -373,7 +374,7 @@ table.calc td,
 	font-family: Arial, Helvetica, sans-serif
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 577px) {
 	.calc2 {
 		padding: 8px;
 		margin-left: auto;
