@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teorema de Pitágoras</title>
+    <link rel="stylesheet" href="{{ url_for('static',    filename='/styles.css') }}">
+     <script type="text/javascript" src="{{ url_for('static',    filename='/scripts.js') }}"></script>
+</head>
+
+<body>
+    <div id="lcol">
+        <div id="doc">
+           <!-- #BeginEditable "doctext" -->
+           <h1>
+              Cálculo do Teorema de Pitágoras
+           </h1>
+           <form name="calcform" autocomplete="off">
+              <p>
+                 Cálculo da Hipotenusa (a):
+              </p>
+              <table class="calc2">
+                 <tbody>
+                    <tr>
+                       <td>Digite o valor do cateto(b):</td>
+                       <td><input type="number" name="a1" min="0" step="any" oninput="calc_c()" autofocus></td>
+                    </tr>
+                    <tr>
+                       <td>Digite o valor do cateto(c):</td>
+                       <td><input type="number" name="b1" min="0" step="any" oninput="calc_c()"></td>
+                    </tr>
+                    <tr>
+                       <td>Valor da Hipotenusa (a):</td>
+                       <td><input type="number" step="any" name="c1" class="outtext" readonly></td>
+                    </tr>
+                 </tbody>
+              </table>
+              <p>
+                 Cálculo do Cateto (c):
+              </p>
+              <table class="calc2">
+                 <tbody>
+                    <tr>
+                       <td>Digite o valor do cateto(b):</td>
+                       <td><input type="number" name="b2" id="b2" min="0" step="any" oninput="calc_lega()"></td>
+                    </tr>
+                    <tr>
+                       <td>Digite o valor da hipotenusa(a):</td>
+                       <td><input type="number" name="c2" id="c2" min="0" step="any" oninput="calc_lega()"></td>
+                    </tr>
+                    <tr>
+                       <td>Valor do cateto (c):</td>
+                       <td><input type="number" step="any" name="a2" class="outtext" readonly></td>
+                    </tr>
+                 </tbody>
+              </table>
+              <p>
+                 Cálculo do cateto(b):
+              </p>
+              <table class="calc2">
+                 <tbody>
+                    <tr>
+                       <td>Digite o valor do cateto(c):</td>
+                       <td><input type="number" name="a3" id="a3" min="0" step="any" oninput="calc_legb()"></td>
+                    </tr>
+                    <tr>
+                       <td>Digite o valor da hipotenusa(a):</td>
+                       <td><input type="number" name="c3" id="c3" min="0" step="any" oninput="calc_legb()"></td>
+                    </tr>
+                    <tr>
+                       <td>Valor do cateto (b) result:</td>
+                       <td><input type="number" step="any" name="b3" class="outtext" readonly></td>
+                    </tr>
+                 </tbody>
+              </table>
+           </form>
+        </div>
+     </div>
+</body>
+</html>
